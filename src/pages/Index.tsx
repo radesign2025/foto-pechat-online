@@ -7,7 +7,7 @@ import Delivery from '../components/Delivery';
 import Order from '../components/Order';
 import Faq from '../components/Faq';
 import Footer from '../components/Footer';
-import { Helmet } from 'react-helmet';
+import { Helmet } from 'react-helmet-async';
 import { useEffect } from 'react';
 
 const Index = () => {
