@@ -1,13 +1,4 @@
-
 import { useState } from 'react';
-import {
-  Table,
-  TableBody,
-  TableCell,
-  TableHead,
-  TableHeader,
-  TableRow,
-} from "@/components/ui/table";
 
 interface PriceCategory {
   title: string;
@@ -29,9 +20,9 @@ const priceData: PriceCategory[] = [
       {
         format: "10х15",
         prices: [
-          { price: "10 руб. / шт.", quantity: "от 1 до 100 шт." },
-          { price: "7 руб. / шт.", quantity: "от 101 до 1000 шт." },
-          { price: "5 руб. / шт.", quantity: "от 1001 шт." }
+          { price: "10 руб.", quantity: "от 1 до 100" },
+          { price: "7 руб.", quantity: "от 101 до 1000" },
+          { price: "5 руб.", quantity: "от 1001" }
         ]
       }
     ]
@@ -42,9 +33,9 @@ const priceData: PriceCategory[] = [
       {
         format: "9х13",
         prices: [
-          { price: "18 руб. / шт.", quantity: "от 1 до 100 шт." },
-          { price: "15 руб. / шт.", quantity: "от 101 до 1000 шт." },
-          { price: "13 руб. / шт.", quantity: "от 1001 шт." }
+          { price: "18 руб.", quantity: "от 1 до 100" },
+          { price: "15 руб.", quantity: "от 101 до 1000" },
+          { price: "13 руб.", quantity: "от 1001" }
         ]
       }
     ]
@@ -55,9 +46,9 @@ const priceData: PriceCategory[] = [
       {
         format: "13х18",
         prices: [
-          { price: "23 руб. / шт.", quantity: "от 1 до 100 шт." },
-          { price: "20 руб. / шт.", quantity: "от 101 до 1000 шт." },
-          { price: "18 руб. / шт.", quantity: "от 1001 шт." }
+          { price: "23 руб.", quantity: "от 1 до 100" },
+          { price: "20 руб.", quantity: "от 101 до 1000" },
+          { price: "18 руб.", quantity: "от 1001" }
         ]
       }
     ]
@@ -68,9 +59,9 @@ const priceData: PriceCategory[] = [
       {
         format: "15х21",
         prices: [
-          { price: "26 руб. / шт.", quantity: "от 1 до 100 шт." },
-          { price: "23 руб. / шт.", quantity: "от 101 до 1000 шт." },
-          { price: "21 руб. / шт.", quantity: "от 1001 шт." }
+          { price: "26 руб.", quantity: "от 1 до 100" },
+          { price: "23 руб.", quantity: "от 101 до 1000" },
+          { price: "21 руб.", quantity: "от 1001" }
         ]
       }
     ]
@@ -81,9 +72,9 @@ const priceData: PriceCategory[] = [
       {
         format: "21х30",
         prices: [
-          { price: "35 руб. / шт.", quantity: "от 1 до 100 шт." },
-          { price: "32 руб. / шт.", quantity: "от 101 до 1000 шт." },
-          { price: "30 руб. / шт.", quantity: "от 1001 шт." }
+          { price: "35 руб.", quantity: "от 1 до 100" },
+          { price: "32 руб.", quantity: "от 101 до 1000" },
+          { price: "30 руб.", quantity: "от 1001" }
         ]
       }
     ]
@@ -94,9 +85,9 @@ const priceData: PriceCategory[] = [
       {
         format: "10х10",
         prices: [
-          { price: "15 руб. / шт.", quantity: "от 1 до 100 шт." },
-          { price: "12 руб. / шт.", quantity: "от 101 до 1000 шт." },
-          { price: "10 руб. / шт.", quantity: "от 1001 шт." }
+          { price: "15 руб.", quantity: "от 1 до 100" },
+          { price: "12 руб.", quantity: "от 101 до 1000" },
+          { price: "10 руб.", quantity: "от 1001" }
         ]
       }
     ]
@@ -107,9 +98,9 @@ const priceData: PriceCategory[] = [
       {
         format: "10х12",
         prices: [
-          { price: "15 руб. / шт.", quantity: "от 1 до 100 шт." },
-          { price: "12 руб. / шт.", quantity: "от 101 до 1000 шт." },
-          { price: "10 руб. / шт.", quantity: "от 1001 шт." }
+          { price: "15 руб.", quantity: "от 1 до 100" },
+          { price: "12 руб.", quantity: "от 101 до 1000" },
+          { price: "10 руб.", quantity: "от 1001" }
         ]
       }
     ]
@@ -144,30 +135,30 @@ const Prices = () => {
           <h3 className="font-semibold text-lg mb-4">{priceData[activeTab].title}</h3>
           
           <div className="overflow-x-auto">
-            <Table>
-              <TableHeader>
-                <TableRow>
-                  <TableHead>Формат</TableHead>
-                  <TableHead>Цена</TableHead>
-                  <TableHead>Количество</TableHead>
-                </TableRow>
-              </TableHeader>
-              <TableBody>
+            <table className="min-w-full border-collapse">
+              <thead>
+                <tr>
+                  <th className="table-cell table-header">Формат</th>
+                  <th className="table-cell table-header">Цена</th>
+                  <th className="table-cell table-header">Количество</th>
+                </tr>
+              </thead>
+              <tbody>
                 {priceData[activeTab].items.map((item, itemIndex) => (
                   item.prices.map((price, priceIndex) => (
-                    <TableRow key={`${itemIndex}-${priceIndex}`}>
+                    <tr key={`${itemIndex}-${priceIndex}`} className={priceIndex % 2 === 0 ? 'bg-gray-50' : 'bg-white'}>
                       {priceIndex === 0 && (
-                        <TableCell rowSpan={item.prices.length}>
+                        <td className="table-cell" rowSpan={item.prices.length}>
                           {item.format}
-                        </TableCell>
+                        </td>
                       )}
-                      <TableCell>{price.price}</TableCell>
-                      <TableCell>{price.quantity}</TableCell>
-                    </TableRow>
+                      <td className="table-cell">{price.price}</td>
+                      <td className="table-cell">{price.quantity}</td>
+                    </tr>
                   ))
                 ))}
-              </TableBody>
-            </Table>
+              </tbody>
+            </table>
           </div>
         </div>
       </div>
