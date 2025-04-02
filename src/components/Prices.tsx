@@ -20,9 +20,9 @@ const priceData: PriceCategory[] = [
       {
         format: "10х15",
         prices: [
-          { price: "10 руб.", quantity: "1 - 100" },
-          { price: "7 руб.", quantity: "101 - 1000" },
-          { price: "5 руб.", quantity: "от 1001" }
+          { price: "10 р.", quantity: "1 - 100" },
+          { price: "7 р.", quantity: "101 - 1000" },
+          { price: "5 р.", quantity: "от 1001" }
         ]
       }
     ]
@@ -33,9 +33,9 @@ const priceData: PriceCategory[] = [
       {
         format: "9х13",
         prices: [
-          { price: "18 руб.", quantity: "1 - 100" },
-          { price: "15 руб.", quantity: "101 - 1000" },
-          { price: "13 руб.", quantity: "от 1001" }
+          { price: "18 р.", quantity: "1 - 100" },
+          { price: "15 р.", quantity: "101 - 1000" },
+          { price: "13 р.", quantity: "от 1001" }
         ]
       }
     ]
@@ -46,9 +46,9 @@ const priceData: PriceCategory[] = [
       {
         format: "13х18",
         prices: [
-          { price: "23 руб.", quantity: "1 - 100" },
-          { price: "20 руб.", quantity: "101 - 1000" },
-          { price: "18 руб.", quantity: "от 1001" }
+          { price: "23 р.", quantity: "1 - 100" },
+          { price: "20 р.", quantity: "101 - 1000" },
+          { price: "18 р.", quantity: "от 1001" }
         ]
       }
     ]
@@ -59,9 +59,9 @@ const priceData: PriceCategory[] = [
       {
         format: "15х21",
         prices: [
-          { price: "26 руб.", quantity: "1 - 100" },
-          { price: "23 руб.", quantity: "101 - 1000" },
-          { price: "21 руб.", quantity: "от 1001" }
+          { price: "26 р.", quantity: "1 - 100" },
+          { price: "23 р.", quantity: "101 - 1000" },
+          { price: "21 р.", quantity: "от 1001" }
         ]
       }
     ]
@@ -72,9 +72,9 @@ const priceData: PriceCategory[] = [
       {
         format: "21х30",
         prices: [
-          { price: "35 руб.", quantity: "1 - 100" },
-          { price: "32 руб.", quantity: "101 - 1000" },
-          { price: "30 руб.", quantity: "от 1001" }
+          { price: "35 р.", quantity: "1 - 100" },
+          { price: "32 р.", quantity: "101 - 1000" },
+          { price: "30 р.", quantity: "от 1001" }
         ]
       }
     ]
@@ -85,9 +85,9 @@ const priceData: PriceCategory[] = [
       {
         format: "10х10",
         prices: [
-          { price: "15 руб.", quantity: "1 - 100" },
-          { price: "12 руб.", quantity: "101 - 1000" },
-          { price: "10 руб.", quantity: "от 1001" }
+          { price: "15 р.", quantity: "1 - 100" },
+          { price: "12 р.", quantity: "101 - 1000" },
+          { price: "10 р.", quantity: "от 1001" }
         ]
       }
     ]
@@ -98,9 +98,9 @@ const priceData: PriceCategory[] = [
       {
         format: "10х12",
         prices: [
-          { price: "15 руб.", quantity: "1 - 100" },
-          { price: "12 руб.", quantity: "101 - 1000" },
-          { price: "10 руб.", quantity: "от 1001" }
+          { price: "15 р.", quantity: "1 - 100" },
+          { price: "12 р.", quantity: "101 - 1000" },
+          { price: "10 р.", quantity: "от 1001" }
         ]
       }
     ]
