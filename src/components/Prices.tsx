@@ -1,4 +1,3 @@
-
 import { useState } from 'react';
 
 interface PriceCategory {
@@ -21,9 +20,9 @@ const priceData: PriceCategory[] = [
       {
         format: "10х15",
         prices: [
-          { price: "10 рублей / шт.", quantity: "от 1 до 100 шт." },
-          { price: "7 рублей / шт.", quantity: "от 101 до 1000 шт." },
-          { price: "5 рублей / шт.", quantity: "от 1001 шт." }
+          { price: "10 руб. / шт.", quantity: "от 1 до 100 шт." },
+          { price: "7 руб. / шт.", quantity: "от 101 до 1000 шт." },
+          { price: "5 руб. / шт.", quantity: "от 1001 шт." }
         ]
       }
     ]
@@ -34,9 +33,9 @@ const priceData: PriceCategory[] = [
       {
         format: "9х13",
         prices: [
-          { price: "18 рублей / шт.", quantity: "от 1 до 100 шт." },
-          { price: "15 рублей / шт.", quantity: "от 101 до 1000 шт." },
-          { price: "13 рублей / шт.", quantity: "от 1001 шт." }
+          { price: "18 руб. / шт.", quantity: "от 1 до 100 шт." },
+          { price: "15 руб. / шт.", quantity: "от 101 до 1000 шт." },
+          { price: "13 руб. / шт.", quantity: "от 1001 шт." }
         ]
       }
     ]
@@ -47,9 +46,9 @@ const priceData: PriceCategory[] = [
       {
         format: "13х18",
         prices: [
-          { price: "23 рублей / шт.", quantity: "от 1 до 100 шт." },
-          { price: "20 рублей / шт.", quantity: "от 101 до 1000 шт." },
-          { price: "18 рублей / шт.", quantity: "от 1001 шт." }
+          { price: "23 руб. / шт.", quantity: "от 1 до 100 шт." },
+          { price: "20 руб. / шт.", quantity: "от 101 до 1000 шт." },
+          { price: "18 руб. / шт.", quantity: "от 1001 шт." }
         ]
       }
     ]
@@ -60,9 +59,9 @@ const priceData: PriceCategory[] = [
       {
         format: "15х21",
         prices: [
-          { price: "26 рублей / шт.", quantity: "от 1 до 100 шт." },
-          { price: "23 рублей / шт.", quantity: "от 101 до 1000 шт." },
-          { price: "21 рублей / шт.", quantity: "от 1001 шт." }
+          { price: "26 руб. / шт.", quantity: "от 1 до 100 шт." },
+          { price: "23 руб. / шт.", quantity: "от 101 до 1000 шт." },
+          { price: "21 руб. / шт.", quantity: "от 1001 шт." }
         ]
       }
     ]
@@ -73,9 +72,9 @@ const priceData: PriceCategory[] = [
       {
         format: "21х30",
         prices: [
-          { price: "35 рублей / шт.", quantity: "от 1 до 100 шт." },
-          { price: "32 рублей / шт.", quantity: "от 101 до 1000 шт." },
-          { price: "30 рублей / шт.", quantity: "от 1001 шт." }
+          { price: "35 руб. / шт.", quantity: "от 1 до 100 шт." },
+          { price: "32 руб. / шт.", quantity: "от 101 до 1000 шт." },
+          { price: "30 руб. / шт.", quantity: "от 1001 шт." }
         ]
       }
     ]
@@ -86,9 +85,9 @@ const priceData: PriceCategory[] = [
       {
         format: "10х10",
         prices: [
-          { price: "15 рублей / шт.", quantity: "от 1 до 100 шт." },
-          { price: "12 рублей / шт.", quantity: "от 101 до 1000 шт." },
-          { price: "10 рублей / шт.", quantity: "от 1001 шт." }
+          { price: "15 руб. / шт.", quantity: "от 1 до 100 шт." },
+          { price: "12 руб. / шт.", quantity: "от 101 до 1000 шт." },
+          { price: "10 руб. / шт.", quantity: "от 1001 шт." }
         ]
       }
     ]
@@ -99,9 +98,9 @@ const priceData: PriceCategory[] = [
       {
         format: "10х12",
         prices: [
-          { price: "15 рублей / шт.", quantity: "от 1 до 100 шт." },
-          { price: "12 рублей / шт.", quantity: "от 101 до 1000 шт." },
-          { price: "10 рублей / шт.", quantity: "от 1001 шт." }
+          { price: "15 руб. / шт.", quantity: "от 1 до 100 шт." },
+          { price: "12 руб. / шт.", quantity: "от 101 до 1000 шт." },
+          { price: "10 руб. / шт.", quantity: "от 1001 шт." }
         ]
       }
     ]
