@@ -1,4 +1,13 @@
+
 import { useState } from 'react';
+import {
+  Table,
+  TableBody,
+  TableCell,
+  TableHead,
+  TableHeader,
+  TableRow,
+} from "@/components/ui/table";
 
 interface PriceCategory {
   title: string;
@@ -135,30 +144,30 @@ const Prices = () => {
           <h3 className="font-semibold text-lg mb-4">{priceData[activeTab].title}</h3>
           
           <div className="overflow-x-auto">
-            <table className="min-w-full border-collapse">
-              <thead>
-                <tr>
-                  <th className="table-cell table-header">Формат</th>
-                  <th className="table-cell table-header">Цена</th>
-                  <th className="table-cell table-header">Количество</th>
-                </tr>
-              </thead>
-              <tbody>
+            <Table>
+              <TableHeader>
+                <TableRow>
+                  <TableHead>Формат</TableHead>
+                  <TableHead>Цена</TableHead>
+                  <TableHead>Количество</TableHead>
+                </TableRow>
+              </TableHeader>
+              <TableBody>
                 {priceData[activeTab].items.map((item, itemIndex) => (
                   item.prices.map((price, priceIndex) => (
-                    <tr key={`${itemIndex}-${priceIndex}`} className={priceIndex % 2 === 0 ? 'bg-gray-50' : 'bg-white'}>
+                    <TableRow key={`${itemIndex}-${priceIndex}`}>
                       {priceIndex === 0 && (
-                        <td className="table-cell" rowSpan={item.prices.length}>
+                        <TableCell rowSpan={item.prices.length}>
                           {item.format}
-                        </td>
+                        </TableCell>
                       )}
-                      <td className="table-cell">{price.price}</td>
-                      <td className="table-cell">{price.quantity}</td>
-                    </tr>
+                      <TableCell>{price.price}</TableCell>
+                      <TableCell>{price.quantity}</TableCell>
+                    </TableRow>
                   ))
                 ))}
-              </tbody>
-            </table>
+              </TableBody>
+            </Table>
           </div>
         </div>
       </div>
