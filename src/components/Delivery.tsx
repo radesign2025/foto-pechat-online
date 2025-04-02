@@ -26,7 +26,7 @@ const Delivery = () => {
               <CreditCard size={40} className="text-photo-primary" />
             </div>
             <h3 className="text-lg font-semibold mb-2">Удобная оплата</h3>
-            <p className="text-gray-600">Оплата при получении или через безопасную сделку на Avito</p>
+            <p className="text-gray-600">Оплата через безопасную сделку Avito, или курьеру на руки, при доставке по Москве</p>
           </div>
         </div>
         
