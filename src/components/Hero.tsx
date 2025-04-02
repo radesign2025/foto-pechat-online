@@ -17,7 +17,7 @@ const Hero = () => {
               <p className="text-lg mb-8 md:text-xl">Пpофеccиoнaльная пeчать фотографий на совpeменнoм oбоpудoвaнии</p>
               
               {/* Знак отличия Авито вместо кнопки */}
-              <a href="https://www.avito.ru/brands/e9b6ef1e939b7c69e4d3b277bb64c2d9/all?sellerId=1e5c282f2fd7e9d3fc6141cd3ec3f5d9" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm hover:bg-white/20 px-4 py-3 rounded-lg shadow-md transition-all duration-300 border border-white/30">
+              <a href="https://www.avito.ru/moskva/predlozheniya_uslug/pechat_fotografiy_moskva_regiony_2427355867?context=H4sIAAAAAAAA_wEmANn_YToxOntzOjE6IngiO3M6MTY6IjlxZnRLSTcxbTIwZWwzb0EiO30luxrAJgAAAA" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm hover:bg-white/20 px-4 py-3 rounded-lg shadow-md transition-all duration-300 border border-white/30">
                 <div className="flex items-center">
                   {[...Array(5)].map((_, i) => <Star key={i} size={20} className="text-yellow-400 fill-yellow-400" />)}
                 </div>
