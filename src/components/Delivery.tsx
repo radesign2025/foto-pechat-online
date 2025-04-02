@@ -1,9 +1,6 @@
-
 import { Truck, Shield, CreditCard } from 'lucide-react';
-
 const Delivery = () => {
-  return (
-    <section id="delivery" className="section-container bg-gray-50">
+  return <section id="delivery" className="section-container bg-gray-50">
       <h2 className="section-title">Печать фотографий с доставкой</h2>
       
       <div className="max-w-4xl mx-auto">
@@ -13,7 +10,7 @@ const Delivery = () => {
               <Truck size={40} className="text-photo-primary" />
             </div>
             <h3 className="text-lg font-semibold mb-2">Доставка по всей России</h3>
-            <p className="text-gray-600">Отправляем фотографии в любую точку России через Avito и курьерские службы</p>
+            <p className="text-gray-600">Отправляем фотографии в любую точку России партнёрами Avito</p>
           </div>
           
           <div className="bg-white p-6 rounded-lg shadow-md text-center">
@@ -60,8 +57,6 @@ const Delivery = () => {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default Delivery;
